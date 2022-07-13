@@ -25,7 +25,7 @@ function salaryRange() {
         output.textContent = salary.value;
     });
 }
-//save function
+//save function-----------------------------------
 const save = () => {
     try{
     let employeePayroll = createEmployeePayRroll();
@@ -34,7 +34,7 @@ const save = () => {
         return;
     }
 }
-//localStorage
+//localStorage-----------------------------
 function createAndUpdateStorage(employeePayroll){
     let employeePayrollList = JSON.parse(localStorage.getItem("EmployePayrollList"));
     if(employeePayrollList != undefined){
@@ -90,4 +90,22 @@ const getSelectedValue = (propertyValue)=> {
         }
     })
     return setItem;
+}
+//create reset form
+const resetForm = () => {
+    setValue('#name','');
+    unsetSelectedValues('[name=Profile]');
+    unsetSelectedValues('[name=gender]');
+    unsetSelectedValues('[name=department]');
+    setValue('#salary','');
+    setValue('#notes','');
+    setValue('#day','1');
+    setValue('#month','Januvary');
+    setValue('#year','2022');
+}
+const unsetSelectedValues = (propertyValue) =>{
+    let allItems = document.querySelectorAll(propertyValue);
+    allItems.forEach(item =>{
+        item.checked = false;
+    });
 }

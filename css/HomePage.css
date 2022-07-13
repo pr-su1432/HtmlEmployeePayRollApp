@@ -146,7 +146,7 @@ td img{
     cursor: pointer;
 }
 .dept-label{
-    background: yellowgreen;
+    background: rgb(110, 110, 146);
     border-radius: 40px;
     width: fit-content;
     padding: 1px 7px;

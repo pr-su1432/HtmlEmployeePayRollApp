@@ -27,8 +27,23 @@ function salaryRange() {
 }
 //save function
 const save = () => {
+    try{
     let employeePayroll = createEmployeePayRroll();
-    alert(JSON.stringify(employeePayroll));
+    createAndUpdateStorage(employeePayroll);
+    }catch{
+        return;
+    }
+}
+//localStorage
+function createAndUpdateStorage(employeePayroll){
+    let employeePayrollList = JSON.parse(localStorage.getItem("EmployePayrollList"));
+    if(employeePayrollList != undefined){
+        employeePayrollList.push(employeePayroll);
+    }else{
+        employeePayrollList = [employeePayroll];
+    }
+    localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList))
+    alert(JSON.stringify(employeePayrollList));
 }
 
 const createEmployeePayRroll = () => {

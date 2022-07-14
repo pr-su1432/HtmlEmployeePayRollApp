@@ -1,12 +1,20 @@
+let employeePayrollList;
 window.addEventListener('DOMContentLoaded', (event) => {
+    employeePayrollList = getEmployeePayrollDataFromStorage();
+    document.querySelector(".emp-count").textContent = employeePayrollList.length;
     createInnerHtml();
 });
+const getEmployeePayrollDataFromStorage = () =>{
+    return localStorage.getItem('EmployeePayrollList') ?
+                        JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
+}
 
 const createInnerHtml = () => {
     const headerHtml = "<th></th><th>Name</th><th>Gender</th><th>Department</th>"+
                         "<th>Salary</th><th>Start Date</th><th>Actions</th>";
+    
     let innerHtml = `${headerHtml}`;
-    let employeePayrollList = createEmployeePayrollJSON();
+    //let empPayrollList = createEmployeePayrollJSON();-------------uc15-------
     for (const employeePayroll of employeePayrollList) {
         innerHtml = `${innerHtml}  
         <tr>
@@ -19,9 +27,9 @@ const createInnerHtml = () => {
             <td>${employeePayroll._salary}</td>
             <td>${employeePayroll._startDate}</td>
             <td>
-                <img id="1" onclick="remove(this)" alt="delete" 
+                <img id="${employeePayroll._id}" onclick="remove(this)" alt="delete" 
                     src="../assets/delete-black-18dp.svg">
-                <img id="1" onclick="update(this)" alt="edit"
+                <img id="${employeePayroll._id}" onclick="update(this)" alt="edit"
                     src="../assets/update-black-18dp.svg">
             </td>
         </tr>
@@ -29,6 +37,7 @@ const createInnerHtml = () => {
     }
     document.querySelector('#table-display').innerHTML = innerHtml;
 }
+/*-----------uc15----------------*/
 const createEmployeePayrollJSON = () => {
     let employeePayrollListLocal = [
         {

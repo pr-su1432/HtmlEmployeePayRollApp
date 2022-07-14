@@ -34,18 +34,6 @@ const save = () => {
         return;
     }
 }
-//localStorage-----------------------------
-function createAndUpdateStorage(employeePayroll){
-    let employeePayrollList = JSON.parse(localStorage.getItem("EmployePayrollList"));
-    if(employeePayrollList != undefined){
-        employeePayrollList.push(employeePayroll);
-    }else{
-        employeePayrollList = [employeePayroll];
-    }
-    localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList))
-    alert(JSON.stringify(employeePayrollList));
-}
-
 const createEmployeePayRroll = () => {
     let employeePayroll = new Payroll();
     try {
@@ -90,6 +78,17 @@ const getSelectedValue = (propertyValue)=> {
         }
     })
     return setItem;
+}
+//localStorage-----------------------------
+function createAndUpdateStorage(employeePayroll){
+    let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
+    if(employeePayrollList != undefined){
+        employeePayrollList.push(employeePayroll);
+    }else{
+        employeePayrollList = [employeePayroll]
+    }    
+    localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList))
+    alert(JSON.stringify(employeePayrollList));
 }
 //create reset form
 const resetForm = () => {

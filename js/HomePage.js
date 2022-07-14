@@ -6,18 +6,18 @@ const createInnerHtml = () => {
     const headerHtml = "<th></th><th>Name</th><th>Gender</th><th>Department</th>"+
                         "<th>Salary</th><th>Start Date</th><th>Actions</th>";
     let innerHtml = `${headerHtml}`;
-    let empPayrollList = createEmployeePayrollJSON();
-    for (const empPayrollData of empPayrollList) {
+    let employeePayrollList = createEmployeePayrollJSON();
+    for (const employeePayroll of employeePayrollList) {
         innerHtml = `${innerHtml}  
         <tr>
             <td><img class="profile" alt=""
-                src="${empPayrollData._profilePic  }">
+                src="${employeePayroll._profilePic  }">
             </td>
-            <td>${empPayrollData._name}</td>
-            <td>${empPayrollData._gender}</td>
-            <td>${getDeptHtml(empPayrollData._department)}</td>
-            <td>${empPayrollData._salary}</td>
-            <td>${empPayrollData._startDate}</td>
+            <td>${employeePayroll._name}</td>
+            <td>${employeePayroll._gender}</td>
+            <td>${getDeptHtml(employeePayroll._department)}</td>
+            <td>${employeePayroll._salary}</td>
+            <td>${employeePayroll._startDate}</td>
             <td>
                 <img id="1" onclick="remove(this)" alt="delete" 
                     src="../assets/delete-black-18dp.svg">
@@ -30,7 +30,7 @@ const createInnerHtml = () => {
     document.querySelector('#table-display').innerHTML = innerHtml;
 }
 const createEmployeePayrollJSON = () => {
-    let empPayrollListLocal = [
+    let employeePayrollListLocal = [
         {
             _name: 'Prasanna',
             _gender: 'Female',
@@ -83,7 +83,7 @@ const createEmployeePayrollJSON = () => {
             _profilePic: '../assets/Profile4.jpg'
         }
     ];
-    return empPayrollListLocal;
+    return employeePayrollListLocal;
 }
 
 const getDeptHtml = (deptList) => {

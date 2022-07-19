@@ -1,0 +1,524 @@
+{
+  "EmployeePayrollDB": [
+    {
+      "_name": "Prasanna",
+      "_profilePic": "../assets/Profile1.jpg",
+      "_gender": "female",
+      "_department": [
+        "Analyst",
+        "Developer"
+      ],
+      "_salary": "450000",
+      "_notes": "Nice...",
+      "_startDate": "30 May 2022",
+      "id": 2
+    },
+    {
+      "_name": "Mallikharjuna",
+      "_profilePic": "../assets/Profile2.jpg",
+      "_gender": "male",
+      "_department": [
+        "Developer",
+        "Engineer"
+      ],
+      "_salary": "450000",
+      "_notes": "Wow...",
+      "_startDate": "8 Jul 2022",
+      "id": 4
+    },
+    {
+      "_name": "Jagadeesh",
+      "_profilePic": "../assets/Profile4.jpg",
+      "_gender": "male",
+      "_department": [
+        "HR",
+        "Developer"
+      ],
+      "_salary": "445000",
+      "_notes": "Excellet...",
+      "_startDate": "13 Jul 2022",
+      "id": 6
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 8
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 9
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 10
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 11
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 13
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 14
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 15
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 16
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 17
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 18
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 19
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 20
+    },
+    {
+      "_name": "Prasanna",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 21
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 22
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 23
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 24
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 25
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 26
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 27
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 28
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 29
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 30
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 31
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 32
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 33
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 34
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 35
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 36
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 37
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 38
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 39
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 40
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 41
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 42
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 43
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 44
+    },
+    {
+      "_name": "Kommuri",
+      "_gender": "Female",
+      "_department": [
+        "Analyst",
+        "Engineer"
+      ],
+      "_salary": "45000",
+      "_startDate": "12 May 2022",
+      "_notes": "Good...",
+      "_profilePic": "../assets/Profile1.jpg",
+      "id": 45
+    }
+  ]
+}

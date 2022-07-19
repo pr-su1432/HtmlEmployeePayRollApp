@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         output.textContent = salary.value;
     });
     checkForUpdate();
-})
+});
 
 // save function
 const save = (event) => {
@@ -60,7 +60,7 @@ const setEmployeePayrollObject= () => {
     employeePayrollObj._startDate = date;
 }
 //local storage
-const createAndUpdateStorage = () =>{
+function createAndUpdateStorage(employeePayroll) {
     let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
     if(employeePayrollList){
         let empPayroll = employeePayrollList.
@@ -146,10 +146,10 @@ const getSelectedValue = (propertyValue)=> {
     let allItem = document.querySelectorAll(propertyValue);
     let setItem = [];
     allItem.forEach(item=>{
-        if(item.checked )
+        if(item.checked == true){
             setItem.push(item.value);
-        
-    });
+        }
+    })
     return setItem;
 }
 //create reset form

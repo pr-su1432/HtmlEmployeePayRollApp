@@ -37,7 +37,7 @@
             });
 
         const deleteElement = document.querySelector("#delete_services");
-        const deleteURL = "http://localhost:3000/EmployeePayrollDB/12";
+        const deleteURL = "http://localhost:3000/EmployeePayrollDB/9";
         makeServiceCall("DELETE", deleteURL, false)
             .then(responseText => {
                 deleteElement.textContent = "Delete User Data :" + responseText;

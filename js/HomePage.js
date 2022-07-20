@@ -1,14 +1,32 @@
 let employeePayrollList;
 window.addEventListener('DOMContentLoaded', (event) => {
-    employeePayrollList = getEmployeePayrollDataFromStorage();
+    if(Site_Properties.use_local_storage.match("true")){
+        getEmployeePayrollDataFromStorage();
+    }else getEmployeePayrollDataFromServer();
+});
+const getEmployeePayrollDataFromStorage = () =>{
+    employeePayrollList = localStorage.getItem('EmployeePayrollList') ?
+                        JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
+    processEmployeePayrollDataResponse();
+}
+const processEmployeePayrollDataResponse = () => {
     document.querySelector(".emp-count").textContent = employeePayrollList.length;
     createInnerHtml();
     localStorage.removeItem('editEmp');
-});
-const getEmployeePayrollDataFromStorage = () =>{
-    return localStorage.getItem('EmployeePayrollList') ?
-                        JSON.parse(localStorage.getItem('EmployeePayrollList')) : [];
 }
+const getEmployeePayrollDataFromServer = () => {
+    makeServiceCall("GET",Site_Properties.server_url, true)
+    .then(responseText => {
+        employeePayrollList = JSON.parse(responseText);
+        processEmployeePayrollDataResponse();
+    })
+    .catch(error => {
+        console.log("GET Error Status:" + JSON.stringify(error));
+        employeePayrollList = [];
+        processEmployeePayrollDataResponse();
+    });
+}
+
 
 const createInnerHtml = () => {
     const headerHtml = "<th></th><th>Name</th><th>Gender</th><th>Department</th>"+
@@ -109,7 +127,18 @@ const remove = (node) => {
     if(!employeePayroll) return;
     const index = employeePayrollList.map(empData => empData._id).indexOf(employeePayroll._id);
     employeePayrollList.splice(index, 1);
-    localStorage.setItem('EmployeePayrollList', JSON.stringify(employeePayrollList));
-    document.querySelector('.emp-count').textContent = employeePayrollList.length;
-    createInnerHtml();
+    if(Site_Properties.use_local_storage.match("true")){
+        localStorage.setItem('EmployeePayrollList', JSON.stringify(employeePayrollList));
+        document.querySelector('.emp-count').textContent = employeePayrollList.length;
+        createInnerHtml();
+    }else {
+        const deleteURL = Site_Properties.server_url + employeePayroll.id.toString();
+        makeServiceCall("DELETE", deleteURL,true)
+            .then(responseText => {
+                createInnerHtml();
+            })
+            .catch(error =>{
+                console.log("DELETE Error Status: " + JSON.stringify(error));
+            });
+    }
 }
